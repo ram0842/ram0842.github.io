@@ -33,11 +33,13 @@ header {
     height: 100px;
     margin-bottom: 20px;
     background-color: #1C2541;
+    border-style: none;
 }
 
 #aboutpanel1 {
     height: 100px;
     background-color: #1C2541;
+    border-style: none;
 }
 
 .panel1half {
@@ -51,30 +53,29 @@ header {
     width: 300px;
     margin: 100px auto auto auto;
     display: block;
+    opacity: 1;
 }
 
 .pulldown-menu{
     display: none;/*means basically remove this from page, make it hidden*/
     background-color: #5BC0BE;
     position: absolute;
-    top: 90px;
+    top: 87px;
     right: 0px;
     width: 240px;
-    height: 200px;
-    margin: auto;
+    height: 240px;
 }
 
 .pulldown-menu li{
     display: block; /*So li stack on top of each other vertically*/
     color: white;
     opacity: none;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
-    width: 200px;
+    width: 180px;
     height: 30px;
-    margin: auto;
-    padding-top: 10px;
-    font-size: 1em;
+    padding-top: 15px;
+    font-size: 1.2em;
     font-family: 'Lato', sans-serif;
 }
 
@@ -94,9 +95,13 @@ li a {
 
 .panel2 {
     width: 100vw;
-    height: 800px;
-    background-color: white;
+    height: 1000px;
+    background-color:white;
 }
+#projectspanel2 {
+    height: 1500px;
+}
+
 
 #intro-statement {
     font-family: 'Lato', sans-serif;
@@ -115,25 +120,38 @@ li a {
     margin: auto;
 }
 
+.panel2 .three-projects {
+    width: 1000px;
+    height: 1500px;
+    margin: auto;
+
+}
+
 .project {
     width: 450px;
-    height: 450px;
+    height: 600px;
     float: left;
     margin: 10px 15px 10px 15px;
 }
 
 .project .img {
     margin: 0px 0px 0px 0px;
-    height: 300px;
+    height: 450px;
     width: 450px;
+    background-size: cover;
+    background-position: center;
 }
 .project #img1{
-    background-image: url("atlas-lab.jpg");
+    background-image: url("helpinghand.jpg");
 }
 .project #img2{
     background-image: url("proj2.png");
-    background-size: cover;
     background-repeat: no-repeat;
+}
+.project #img3{
+    background-image: url("sipline.jpg");
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
 }
 
 .project-name {
@@ -196,6 +214,10 @@ img:hover{
     font-size: 1.2em;
     font-family: 'Lato', sans-serif;
     color: #1C2541;
+}
+
+#atlasimg {
+    background-image: url("atlas-img.jpg");
 }
 
 
